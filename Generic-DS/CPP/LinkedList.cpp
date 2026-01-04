@@ -81,6 +81,7 @@ class SinglyCLL
 {
     private:
         struct SinglyCLLnode<T> *first;
+        struct SinglyCLLnode<T> *last;
         int iCount;
     public:
         SinglyCLL();
@@ -100,6 +101,7 @@ class DoublyCLL
 {
     private:
         struct DoublyCLLnode<T> *first;
+        struct DoublyCLLnode<T> *last;
         int iCount;
     public:
         DoublyCLL();
@@ -345,6 +347,106 @@ void SinglyCLL<T> :: DeleteAtPos(int pos)
 {
 
 }
+
+
+template <class T>
+DoublyLLL<T> :: DoublyLLL()
+{
+    this->first = NULL;
+    this->iCount = 0;
+}
+template <class T>
+void DoublyLLL<T> :: Display()
+{
+
+}
+template <class T>
+int DoublyLLL<T> :: Count()
+{
+    return this->iCount;
+}
+template <class T>
+void DoublyLLL<T> :: InsertFirst(T no)
+{
+
+}
+template <class T>
+void DoublyLLL<T> :: InsertLast(T no)
+{
+
+}
+template <class T>
+void DoublyLLL<T> :: InsertAtPos(T no,int pos)
+{
+
+}
+template <class T>
+void DoublyLLL<T> :: DeleteFirst()
+{
+
+}
+template <class T>
+void DoublyLLL<T> :: DeleteLast()
+{
+
+}
+template <class T>
+void DoublyLLL<T> :: DeleteAtPos(int pos)
+{
+
+}
+
+
+template <class T>
+DoublyCLL<T> :: DoublyCLL()
+{
+    this->first = NULL;
+    this->last = NULL;
+    this->iCount = 0;
+}
+template <class T>
+void DoublyCLL<T> :: Display()
+{
+
+}
+template <class T>
+int DoublyCLL<T> :: Count()
+{
+    return this->iCount;
+}
+template <class T>
+void DoublyCLL<T> :: InsertFirst(T no)
+{
+
+}
+template <class T>
+void DoublyCLL<T> :: InsertLast(T no)
+{
+
+}
+template <class T>
+void DoublyCLL<T> :: InsertAtPos(T no,int pos)
+{
+
+}
+template <class T>
+void DoublyCLL<T> :: DeleteFirst()
+{
+
+}
+template <class T>
+void DoublyCLL<T> :: DeleteLast()
+{
+
+}
+template <class T>
+void DoublyCLL<T> :: DeleteAtPos(int pos)
+{
+
+}
+
+
+
 int main()
 {
     SinglyLLL<int> SinglyLLLObj;
@@ -380,6 +482,40 @@ cout<<"SinglyLLL : \n\n";
     SinglyLLLObj.DeleteAtPos(3);
     SinglyLLLObj.Display();
     cout<<"Element : "<<SinglyLLLObj.Count();
+
+
+
+
+
+
+    cout<<"SinglyCLL : \n\n";
+    SinglyCLLObj.InsertFirst(51);
+    SinglyCLLObj.InsertFirst(21);
+    SinglyCLLObj.InsertFirst(11);
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
+
+    SinglyCLLObj.InsertLast(101);
+    SinglyCLLObj.InsertLast(111);
+    SinglyCLLObj.InsertLast(121);
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
+
+    SinglyCLLObj.InsertAtPos(105,5);
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
+
+    SinglyCLLObj.DeleteFirst();
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
+
+    SinglyCLLObj.DeleteLast();
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
+
+    SinglyCLLObj.DeleteAtPos(3);
+    SinglyCLLObj.Display();
+    cout<<"Element : "<<SinglyCLLObj.Count();
     
     return 0;
 }
