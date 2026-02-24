@@ -1,3 +1,4 @@
+
 #include<iostream>
 using namespace std;
 
@@ -14,7 +15,7 @@ struct SinglyLLLnode
 
 template <class T>
 struct DoublyLLLnode
-{
+{8
     T data;
     struct DoublyLLLnode *next;
     struct DoublyLLLnode *prev;

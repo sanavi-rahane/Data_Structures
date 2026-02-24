@@ -1,0 +1,293 @@
+1️⃣ Basic Array Operations (Must know)
+
+Ye almost har fresher ko aana chahiye.
+
+Problems:
+
+Find maximum element in array
+
+Find minimum element in array
+
+Find second largest element
+
+Find second smallest element
+
+Reverse an array
+
+Check if array is sorted
+
+Sum of all elements
+
+Count frequency of each element
+
+Linear search
+
+Remove duplicates from sorted array
+
+Goal: Array traversal strong ho.
+
+2️⃣ Index Based Problems
+
+Ye logic building ke liye important hai.
+
+Left rotate array by 1
+
+Left rotate array by K
+
+Right rotate array by K
+
+Move all zeros to end
+
+Move all negatives to one side
+
+Rearrange array alternatively (+ -)
+
+Union of two arrays
+
+Intersection of two arrays
+
+Important concept:
+
+swapping
+
+two pointers
+
+3️⃣ Two Pointer Pattern
+
+Ye interviews me bahut aata hai.
+
+Problems:
+
+Two Sum (sorted array)
+
+Remove duplicates
+
+Container with most water
+
+Pair with given sum
+
+3 Sum (basic understanding)
+
+Key idea:
+Left pointer + Right pointer.
+
+4️⃣ Sliding Window Pattern
+
+Internships me frequently puchte hain.
+
+Problems:
+
+Maximum sum subarray of size K
+
+First negative number in window
+
+Count distinct elements in window
+
+Longest substring without repeating (string but same pattern)
+
+Maximum average subarray
+
+Goal:
+Window expand / shrink samajhna.
+
+5️⃣ Prefix Sum Pattern
+
+Ye smart optimization hota hai.
+
+Problems:
+
+Range sum query
+
+Equilibrium index
+
+Subarray sum equals K
+
+Count subarrays with given sum
+
+Concept:
+precompute → fast queries.
+
+6️⃣ Kadane's Algorithm
+
+Very famous interview question.
+
+Problems:
+
+Maximum subarray sum
+
+Print subarray with maximum sum
+
+Maximum circular subarray sum
+
+7️⃣ Hashing + Arrays
+
+DSA ka real power yaha se start hota hai.
+
+Problems:
+
+Two Sum (unsorted)
+
+Longest consecutive sequence
+
+Majority element
+
+Find duplicate number
+
+Missing number
+
+8️⃣ Sorting Based Problems
+
+Simple but asked in interviews.
+
+Problems:
+
+Sort array of 0,1,2 (Dutch National Flag)
+
+Merge two sorted arrays
+
+Kth largest element
+
+Check if two arrays are equal
+
+9️⃣ Subarray Problems (Very Important)
+
+Internships me aate hain.
+
+Problems:
+
+Subarray with given sum
+
+Longest subarray with sum K
+
+Count subarrays
+
+Maximum product subarray
+
+🎯 Agar tum ye kar leti ho to Arrays DONE
+
+Approx problems count:
+
+• Basic – 10
+• Index logic – 8
+• Two pointer – 5
+• Sliding window – 5
+• Prefix sum – 4
+• Kadane – 3
+• Hashing – 5
+• Sorting – 4
+• Subarray – 4
+
+Total ≈ 48 problems
+
+
+
+
+
+
+1. Basic Traversal
+
+Find largest element in array
+
+Find second largest element
+
+Check if array is sorted
+
+Remove duplicates from sorted array
+
+Concept:
+
+traversal
+
+basic logic
+
+2. Rotation / Index Manipulation
+
+Left rotate array by one
+
+Left rotate array by K
+
+Move all zeros to end
+
+Concept:
+
+swapping
+
+index control
+
+3. Two Pointer Pattern
+
+Two Sum (sorted array)
+
+Container With Most Water
+
+3 Sum (basic understanding)
+
+Concept:
+
+left pointer
+
+right pointer
+
+shrinking window
+
+4. Subarray Basics
+
+Maximum Subarray Sum (Kadane's Algorithm)
+
+Maximum Product Subarray
+
+Longest Subarray with Sum K
+
+Concept:
+
+running sum
+
+optimization
+
+5. Prefix Sum
+
+Subarray Sum Equals K
+
+Equilibrium Index
+
+Concept:
+
+prefix array
+
+hashmap
+
+6. Hashing + Arrays
+
+Two Sum (unsorted array)
+
+Majority Element
+
+Longest Consecutive Sequence
+
+Concept:
+
+hashmap
+
+frequency counting
+
+7. Sorting Based
+
+Sort Array of 0s, 1s and 2s (Dutch National Flag)
+
+Merge Two Sorted Arrays
+
+Concept:
+
+partition
+
+pointer merging
+
+🧠 Patterns Tumhe Clearly Dikhenge
+Pattern	Problems
+Traversal	largest, second largest
+Two Pointer	two sum, container
+Sliding Window	longest subarray
+Prefix Sum	subarray sum
+Kadane	max subarray
+Hashing	majority element
+Sorting	0 1 2 problem

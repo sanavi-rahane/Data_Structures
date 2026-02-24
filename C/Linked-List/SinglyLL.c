@@ -191,34 +191,69 @@ void DeleteAtPos(PPNODE first,int pos)
 int main()
 {
     PNODE head = NULL;
-    Insertfirst(&head,30);
-    Insertfirst(&head,20);
-    Insertfirst(&head,10);
-    Insertfirst(&head,5);
+    int iChoice = 0;
+    int iNo = 0;
+    int Position = 0;
 
-    Display(head);
-    printf("Number of Element : %d",Count(head));
+    printf("1.Insert First\n2.Inser tLast\n3.Insert At Position\n4.Delete First\n4.Delete Last\n5.Delete At Position\n6.Display Linked List\n7.Total Count of Nodes\n8.Exit");
+    
+    while (1)
+    {    
+        printf("Enter Your Choice : \n");
+        scanf("%d",&iChoice);
+ 
+        switch (iChoice)
+        {
+        case 1 :
+            printf("Enter Number to Insert at First : \n");
+            scanf("%d",&iNo);
+            Insertfirst(&head,iNo);
+            printf("Number Inserted Succesfully! \n");
+            break;
+        case 2 :
+            printf("Enter Number to Insert at Last : \n");
+            scanf("%d",&iNo);
+            InsertLast(&head,iNo);
+            printf("Number Inserted Succesfully! \n");
+            break;
+        case 3 :
+            printf("Enter Number to Insert at Position : \n");
+            scanf("%d",&iNo);
+            printf("Enter Position where you want to insert number :\n");
+            scanf("%d",Position);
+            InsertAtPos(&head,iNo,Position);
+            printf("Number Inserted Succesfully! \n");
+            break;
+        case 4 :
+            
+            DeleteFirst(&head);
+            printf("first Node Deleted Succesfully! \n");
+            break;
+        case 5 :
+        
+            DeleteLast(&head);
+            printf("last Node Deleted Succesfully! \n");
+            break;
+        case 6 :
+            printf("Enter Position of node : \n");
+            scanf("%d",&Position);
+            DeleteAtPos(&head,Position);
+            printf("Node Deleted Succesfully! \n");
+            break;
+        case 7 :
+            Display(head);
+            break;
+        case 8 :
+            printf("Number of Element : %d",Count(head));
+            break;
+        case 9 :
+        exit(0);
+            break;
+        
+        default:
+            printf("Please Enter Valid Choice \n");
+            break;
+        }
+    }
 
-    InsertLast(&head,40);
-    Display(head);
-    printf("Number of Element : %d",Count(head));
-
-    InsertAtPos(&head,78,3);
-    Display(head);
-    printf("Number of Element : %d",Count(head));
-
-    DeleteFirst(&head);
-    Display(head);
-    printf("\nNumber of Element : %d",Count(head));
-
-    DeleteLast(&head);
-    Display(head);
-    printf("\nNumber of Element : %d",Count(head));
-
-    DeleteAtPos(&head,5);
-   
-    Display(head);
-    printf("\nNumber of Element : %d",Count(head));
-
-    return 0;
 }

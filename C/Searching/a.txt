@@ -1,0 +1,11 @@
+linear 
+bidirectional
+binary
+
+
+on Array
+on LInkedlist
+on stack 
+on queue
+on tree
+on graph
